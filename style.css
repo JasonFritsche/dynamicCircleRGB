@@ -1,0 +1,78 @@
+body{
+  background-color: #41424c;
+  font-size: 1em;
+  font-family: 'Monda', sans-serif;
+
+}
+span{
+  color:#f1d1ff;
+  margin-left: 60px;
+}
+
+#circle{
+  width: 250px;
+  height:250px;
+  border-radius: 50%;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#box1{
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+#box2, #box3, #box4, #box5{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+}
+
+.colorLabel{
+  display: inline-block;
+  width: 60px;
+  border: 2px solid black;
+  border-radius: 10%;
+  text-align: center;
+  position: relative;
+  top: -8px;
+  margin-left: 50px;
+}
+
+input[type=range]::-moz-range-progress {
+  background-color: #9b9b9b;
+  height: 1em;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #d0e0e0;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #e5e5e5;
+}
+
+#redLabel{
+  background-color: #ff1919;
+}
+
+#greenLabel{
+  background-color: #00c638;
+}
+
+#blueLabel{
+  background-color: #1c63ff;
+}
+#sizeLabel{
+  background-color: #c9fcf6;
+}
